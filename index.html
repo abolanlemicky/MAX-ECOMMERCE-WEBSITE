@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAX | Everything You Need. Delivered.</title>
+    <meta
+      name="description"
+      content="MAX delivers fast, affordable essentials for everyday life. Everything You Need. Delivered."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MAX" />
+    <meta property="og:title" content="MAX | Everything You Need. Delivered." />
+    <meta property="og:description" content="Shop thoughtfully selected essentials for modern everyday living." />
+    <meta property="og:image" content="assets/products/Apple-AirPods-Pro-2.jfif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="utility-bar">
+          <div class="utility-inner">
+            <div class="utility-message">
+              <span>Free delivery on selected orders</span>
+            </div>
+            <div class="utility-links">
+              <a href="contact.html">Customer service</a>
+              <a href="orders.html">Track order</a>
+              <a href="faq.html">Help</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main">
+          <div class="header-main-inner">
+            <a class="brand" href="index.html" aria-label="MAX home">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+                <span class="brand-tagline">Everything You Need. Delivered.</span>
+              </div>
+            </a>
+
+            <label class="header-search" aria-label="Search products">
+              <input type="text" placeholder="Search for products, brands and categories…" />
+              <button class="search-action" type="button">Search</button>
+            </label>
+
+            <div class="header-actions">
+              <a href="account.html" class="header-action account-pill" aria-label="Account">
+                <span>👤</span>
+                <span>Account</span>
+              </a>
+              <a href="wishlist.html" class="header-action" aria-label="Wishlist">
+                <span>♡</span>
+                <span>Wishlist</span>
+                <span id="wishlistCount" class="count" hidden>0</span>
+              </a>
+              <a href="cart.html" class="header-action" aria-label="Cart">
+                <span>🛒</span>
+                <span>Cart</span>
+                <span id="cartCount" class="count" hidden>0</span>
+              </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Open menu" type="button">
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category-strip">
+          <nav class="category-strip-inner" aria-label="Category navigation">
+            <a href="#" class="category-item active">Categories</a>
+            <a href="#" class="category-item">Today’s Deals</a>
+            <a href="#" class="category-item">Flash Sale</a>
+            <a href="#" class="category-item">New Arrivals</a>
+            <a href="#" class="category-item">Best Sellers</a>
+            <a href="#" class="category-item">Electronics</a>
+            <a href="#" class="category-item">Fashion</a>
+            <a href="#" class="category-item">Beauty</a>
+            <a href="#" class="category-item">Phones</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-copy">
+            <span class="eyebrow">Curated essentials</span>
+            <h1>Shop Everything You Love</h1>
+            <p>
+              Discover great products from trusted sellers at prices you’ll love.
+            </p>
+            <div class="cta-row">
+              <a href="#shop" class="primary-btn">Shop Now</a>
+              <a href="#deals" class="secondary-btn">Explore Deals</a>
+            </div>
+            <div class="stat-row">
+              <div>
+                <strong>15k+</strong>
+                <span>happy shoppers</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>average rating</span>
+              </div>
+              <div>
+                <strong>2-day</strong>
+                <span>dispatch speed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured products">
+            <div class="showcase-card product-highlight reveal-card">
+              <div class="mini-tag">Trending</div>
+              <img
+                src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80"
+                alt="Premium smartwatch"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+              <div class="mini-info">
+                <div>
+                  <span class="label">Aster Studio</span>
+                  <h3>Aural One W1</h3>
+                </div>
+                <div class="price-wrap">
+                  <span class="current-price">₦299,000</span>
+                  <span class="old-price">₦379,000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-badge reveal-badge">
+              <span>Best seller</span>
+              <strong>Top rated</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="promo-band container" aria-label="Store benefits">
+          <article>
+            <span class="promo-icon">⚡</span>
+            <div>
+              <h4>Fast shipping</h4>
+              <p>On orders over ₦75,000</p>
+            </div>
+          </article>
+          <article>
+            <span class="promo-icon">🛡️</span>
+            <div>
+              <h4>Secure checkout</h4>
+              <p>Protected at every step</p>
+            </div>
+          </article>
+          <article>
+            <span class="promo-icon">↩️</span>
+            <div>
+              <h4>Easy returns</h4>
+              <p>Within 30 days</p>
+            </div>
+          </article>
+        </section>
+
+        <section id="collections" class="categories container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Popular categories</span>
+              <h2>Shop by lifestyle</h2>
+            </div>
+            <a href="category.html">Browse all</a>
+          </div>
+
+          <div id="homepageCategories" class="category-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="deals" class="deals container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Today’s deals</span>
+              <h2>Smart savings, elevated picks</h2>
+            </div>
+            <a href="#shop">See full offer</a>
+          </div>
+
+          <div class="deal-grid">
+            <article class="deal-card primary">
+              <div>
+                <span class="tag">Members save 25%</span>
+                <h3>Enjoy an extra 25% off premium home tech.</h3>
+              </div>
+              <button class="primary-btn small" type="button">Claim offer</button>
+            </article>
+            <article class="deal-card secondary">
+              <div>
+                <span class="tag">Flash sale</span>
+                <h3>Wireless audio from ₦69,000.</h3>
+              </div>
+              <button class="secondary-btn small" type="button">Shop audio</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="flash-sale container" aria-label="Flash sale">
+          <div class="flash-sale-header">
+            <div>
+              <span class="eyebrow">Flash sale</span>
+              <h2>Deals worth grabbing before they’re gone</h2>
+            </div>
+            <div class="flash-sale-meta">
+              <span class="sale-badge">Up to 70% off</span>
+              <a href="deals.html" class="view-all-deals">View All Deals</a>
+            </div>
+          </div>
+
+          <div class="flash-sale-panel">
+            <div class="flash-sale-timer" aria-live="polite">
+              <div class="time-box">
+                <span id="flashDays">02</span>
+                <small>Days</small>
+              </div>
+              <div class="time-box">
+                <span id="flashHours">14</span>
+                <small>Hours</small>
+              </div>
+              <div class="time-box">
+                <span id="flashMinutes">36</span>
+                <small>Minutes</small>
+              </div>
+              <div class="time-box">
+                <span id="flashSeconds">22</span>
+                <small>Seconds</small>
+              </div>
+            </div>
+
+            <div class="flash-sale-grid">
+              <article class="flash-product-card">
+                <div class="flash-product-image">
+                  <span class="discount-pill">-40%</span>
+                  <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80" alt="Wireless speaker" loading="lazy" decoding="async" />
+                </div>
+                <div class="flash-product-body">
+                  <div class="flash-product-top">
+                    <span class="flash-tag">Audio</span>
+                    <strong>₦119,000</strong>
+                  </div>
+                  <h3>Echo Mini Pro</h3>
+                  <p>Deep sound, compact build, all-day battery.</p>
+                  <div class="stock-row">
+                    <div class="stock-bar"><span style="width: 72%"></span></div>
+                    <span>12/18 left</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="flash-product-card">
+                <div class="flash-product-image">
+                  <span class="discount-pill">-55%</span>
+                  <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Smartwatch" loading="lazy" decoding="async" />
+                </div>
+                <div class="flash-product-body">
+                  <div class="flash-product-top">
+                    <span class="flash-tag">Wearables</span>
+                    <strong>₦99,000</strong>
+                  </div>
+                  <h3>Arc Smartwatch</h3>
+                  <p>Health tracking, notifications, and premium style.</p>
+                  <div class="stock-row">
+                    <div class="stock-bar"><span style="width: 58%"></span></div>
+                    <span>9/16 left</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="flash-product-card">
+                <div class="flash-product-image">
+                  <span class="discount-pill">-30%</span>
+                  <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80" alt="Laptop" loading="lazy" decoding="async" />
+                </div>
+                <div class="flash-product-body">
+                  <div class="flash-product-top">
+                    <span class="flash-tag">Computers</span>
+                    <strong>₦699,000</strong>
+                  </div>
+                  <h3>Aster Laptop</h3>
+                  <p>Fast everyday productivity in a sleek modern shell.</p>
+                  <div class="stock-row">
+                    <div class="stock-bar"><span style="width: 41%"></span></div>
+                    <span>7/17 left</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="shop" class="catalog container">
+          <div class="section-head shopping-head">
+            <div>
+              <span class="eyebrow">Featured products</span>
+              <h2>Fresh favorites for your space</h2>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div class="filter-group" id="categoryFilters" aria-label="Product filters">
+              <button class="filter-chip active" data-filter="all">All</button>
+              <button class="filter-chip" data-filter="Audio">Audio</button>
+              <button class="filter-chip" data-filter="Home">Home</button>
+              <button class="filter-chip" data-filter="Wellness">Wellness</button>
+              <button class="filter-chip" data-filter="Gaming">Gaming</button>
+              <button class="filter-chip" data-filter="Fashion">Fashion</button>
+              <button class="filter-chip" data-filter="Kitchen">Kitchen</button>
+            </div>
+
+            <div class="search-sort-wrap">
+              <label class="search-box">
+                <span>Search</span>
+                <input id="searchInput" type="text" placeholder="Search products" />
+              </label>
+              <label class="sort-box">
+                <span>Sort by</span>
+                <select id="sortSelect">
+                  <option value="recommended">Recommended</option>
+                  <option value="popular">Popular</option>
+                  <option value="newest">Newest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="highest-rated">Highest Rated</option>
+                  <option value="biggest-discount">Biggest Discount</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="features container">
+          <article>
+            <span>🚚</span>
+            <h3>Fast & tracked</h3>
+            <p>Same-day dispatch on selected favorites.</p>
+          </article>
+          <article>
+            <span>💳</span>
+            <h3>Secure payments</h3>
+            <p>Protected checkout with flexible options.</p>
+          </article>
+          <article>
+            <span>🎁</span>
+            <h3>Gift-ready</h3>
+            <p>Elegant packaging for special moments.</p>
+          </article>
+          <article>
+            <span>💬</span>
+            <h3>Expert support</h3>
+            <p>Real people helping make better picks.</p>
+          </article>
+        </section>
+
+        <section id="stories" class="story container">
+          <div class="story-visual">
+            <img
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80"
+              alt="Modern luxury bedroom"
+            />
+          </div>
+          <div class="story-copy">
+            <span class="eyebrow">Our promise</span>
+            <h2>Beautiful products that feel as good as they look.</h2>
+            <p>
+              We curate pieces that blend performance, design, and everyday practicality so your home and routine can feel effortlessly premium.
+            </p>
+            <ul>
+              <li>Thoughtful materials and elevated design</li>
+              <li>Seasonal drops curated by lifestyle experts</li>
+              <li>Minimal, premium shopping experience</li>
+            </ul>
+            <button class="primary-btn">Learn more</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+                <span class="brand-tagline">Everything You Need. Delivered.</span>
+              </div>
+            </div>
+            <p>Curated finds for the modern life.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li>New arrivals</li>
+              <li>Best sellers</li>
+              <li>Gift cards</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li>About us</li>
+              <li>Careers</li>
+              <li>Journal</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li>Shipping</li>
+              <li>Returns</li>
+              <li>Help center</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+      <div class="drawer-header">
+        <div>
+          <span class="eyebrow">Your bag</span>
+          <h3>Cart summary</h3>
+        </div>
+        <button class="close-btn" id="closeCartBtn" aria-label="Close cart">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="drawer-footer">
+        <form class="promo-form" data-promo-form>
+          <label for="drawerPromoInput">Promo code</label>
+          <div class="promo-form-row">
+            <input id="drawerPromoInput" name="promoCode" data-promo-input type="text" placeholder="WELCOME10" autocomplete="off" />
+            <button class="secondary-btn small" type="submit">Apply</button>
+          </div>
+          <span class="promo-message" data-promo-message aria-live="polite"></span>
+        </form>
+        <div class="subtotal-row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">₦0</strong>
+        </div>
+        <div class="drawer-total-row"><span>Delivery</span><strong id="cartDeliveryFee">₦0</strong></div>
+        <div class="drawer-total-row"><span>Discount</span><strong id="cartDiscount">₦0</strong></div>
+        <div class="drawer-actions">
+          <a class="secondary-btn small" href="cart.html">View Cart</a>
+          <a class="primary-btn small" href="checkout.html">Checkout</a>
+        </div>
+        <button class="link-btn drawer-clear-btn" type="button" data-action="clear-cart">Clear cart</button>
+      </div>
+    </aside>
+
+    <aside class="wishlist-panel" id="wishlistPanel" aria-label="Wishlist panel">
+      <div class="drawer-header">
+        <div>
+          <span class="eyebrow">Saved items</span>
+          <h3>Wishlist</h3>
+        </div>
+        <button class="close-btn" id="closeWishlistBtn" aria-label="Close wishlist">×</button>
+      </div>
+      <div id="wishlistItems" class="wishlist-items"></div>
+    </aside>
+
+    <div class="modal hidden" id="quickViewModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="quickViewTitle">
+        <button class="close-btn modal-close" id="closeModalBtn" aria-label="Close product preview">×</button>
+        <div id="quickViewBody"></div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="js/products.js"></script><script src="js/ui.js"></script><script src="js/header.js"></script><script src="js/search.js"></script><script src="js/shop.js"></script><script src="js/product.js"></script><script src="js/cart.js"></script><script src="js/wishlist.js"></script><script src="js/checkout.js"></script><script src="js/auth.js"></script><script src="js/account.js"></script><script src="js/app.js"></script>
+  </body>
+</html>

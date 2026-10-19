@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAX | Search Results</title>
+    <meta name="description" content="Search results for premium home, audio, and wellness products." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MAX" />
+    <meta property="og:title" content="MAX | Search Results" />
+    <meta property="og:description" content="Search MAX products by name, brand, category, or keyword." />
+    <meta property="og:image" content="assets/products/Apple-AirPods-Pro-2.jfif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="utility-bar">
+          <div class="utility-inner">
+            <div class="utility-message">
+              <span>Free delivery on selected orders</span>
+            </div>
+            <div class="utility-links">
+              <a href="#">Customer service</a>
+              <a href="#">Track order</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main">
+          <div class="header-main-inner">
+            <div class="brand" aria-label="MAX home">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+                <span class="brand-tagline">Everything You Need. Delivered.</span>
+              </div>
+            </div>
+
+            <label class="header-search" aria-label="Search products">
+              <input type="text" placeholder="Search for products, brands and categories…" />
+              <button class="search-action" type="button">Search</button>
+            </label>
+
+            <div class="header-actions">
+              <a href="account.html" class="header-action account-pill" aria-label="Account">
+                <span>👤</span>
+                <span>Account</span>
+              </a>
+              <a href="wishlist.html" class="header-action" aria-label="Wishlist">
+                <span>♡</span>
+                <span>Wishlist</span>
+                <span id="wishlistCount" class="count" hidden>0</span>
+              </a>
+              <a href="cart.html" class="header-action" aria-label="Cart">
+                <span>🛒</span>
+                <span>Cart</span>
+                <span id="cartCount" class="count" hidden>0</span>
+              </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Open menu" type="button">
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category-strip">
+          <nav class="category-strip-inner" aria-label="Category navigation">
+            <a href="#" class="category-item active">Categories</a>
+            <a href="#" class="category-item">Today’s Deals</a>
+            <a href="#" class="category-item">Flash Sale</a>
+            <a href="#" class="category-item">New Arrivals</a>
+            <a href="#" class="category-item">Best Sellers</a>
+            <a href="#" class="category-item">Electronics</a>
+            <a href="#" class="category-item">Fashion</a>
+            <a href="#" class="category-item">Beauty</a>
+            <a href="#" class="category-item">Phones</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="container page-hero">
+          <div class="page-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Search</span>
+          </div>
+
+          <div class="page-intro">
+            <div>
+              <span class="eyebrow">Search</span>
+              <h1 data-search-heading>Results</h1>
+            </div>
+            <p data-search-summary>Start searching to discover products and categories.</p>
+          </div>
+        </section>
+
+        <section class="container">
+          <div id="searchResultsGrid" class="listing-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+              </div>
+            </div>
+            <p>Curated finds for the modern life.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li>New arrivals</li>
+              <li>Best sellers</li>
+              <li>Gift cards</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li>Careers</li>
+              <li>Journal</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li>Shipping</li>
+              <li>Returns</li>
+              <li><a href="faq.html">Help center</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/products.js"></script><script src="js/ui.js"></script><script src="js/header.js"></script><script src="js/search.js"></script><script src="js/shop.js"></script><script src="js/product.js"></script><script src="js/cart.js"></script><script src="js/wishlist.js"></script><script src="js/checkout.js"></script><script src="js/auth.js"></script><script src="js/account.js"></script><script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAX | Echo Mini Pro</title>
+    <meta name="description" content="Detailed view of the Echo Mini Pro premium speaker." />
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="MAX" />
+    <meta property="og:title" content="MAX | Product details" />
+    <meta property="og:description" content="Explore product details, specifications, delivery, and reviews at MAX." />
+    <meta property="og:image" content="assets/products/Apple-AirPods-Pro-2.jfif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="utility-bar">
+          <div class="utility-inner">
+            <div class="utility-message">
+              <span>Free delivery on selected orders</span>
+            </div>
+            <div class="utility-links">
+              <a href="#">Customer service</a>
+              <a href="#">Track order</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main">
+          <div class="header-main-inner">
+            <div class="brand" aria-label="MAX home">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+                <span class="brand-tagline">Everything You Need. Delivered.</span>
+              </div>
+            </div>
+
+            <label class="header-search" aria-label="Search products">
+              <input type="text" placeholder="Search for products, brands and categories…" />
+              <button class="search-action" type="button">Search</button>
+            </label>
+
+            <div class="header-actions">
+              <a href="account.html" class="header-action account-pill" aria-label="Account">
+                <span>👤</span>
+                <span>Account</span>
+              </a>
+              <a href="wishlist.html" class="header-action" aria-label="Wishlist">
+                <span>♡</span>
+                <span>Wishlist</span>
+                <span id="wishlistCount" class="count" hidden>0</span>
+              </a>
+              <a href="cart.html" class="header-action" aria-label="Cart">
+                <span>🛒</span>
+                <span>Cart</span>
+                <span id="cartCount" class="count" hidden>0</span>
+              </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Open menu" type="button">
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category-strip">
+          <nav class="category-strip-inner" aria-label="Category navigation">
+            <a href="#" class="category-item active">Categories</a>
+            <a href="#" class="category-item">Today’s Deals</a>
+            <a href="#" class="category-item">Flash Sale</a>
+            <a href="#" class="category-item">New Arrivals</a>
+            <a href="#" class="category-item">Best Sellers</a>
+            <a href="#" class="category-item">Electronics</a>
+            <a href="#" class="category-item">Fashion</a>
+            <a href="#" class="category-item">Beauty</a>
+            <a href="#" class="category-item">Phones</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="container page-hero">
+          <div class="page-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="shop.html">Shop</a>
+            <span>/</span>
+            <span id="productBreadcrumb">Product</span>
+          </div>
+        </section>
+
+        <section class="container product-detail-page">
+          <div id="productDetailPage" class="product-detail-shell">
+            <div id="productGallery" class="product-gallery"></div>
+            <div id="productDetailInfo" class="product-detail-info"></div>
+          </div>
+        </section>
+
+        <section class="container product-information" aria-labelledby="productInformationTitle">
+          <div class="product-information-head">
+            <span class="eyebrow">Know your product</span>
+            <h2 id="productInformationTitle">Product information</h2>
+          </div>
+          <div class="product-tabs" role="tablist" aria-label="Product information">
+            <button class="product-tab active" type="button" role="tab" id="productTabDescription" aria-controls="productPanelDescription" aria-selected="true" data-product-tab="description">Description</button>
+            <button class="product-tab" type="button" role="tab" id="productTabSpecifications" aria-controls="productPanelSpecifications" aria-selected="false" data-product-tab="specifications">Specifications</button>
+            <button class="product-tab" type="button" role="tab" id="productTabReviews" aria-controls="productPanelReviews" aria-selected="false" data-product-tab="reviews">Reviews</button>
+            <button class="product-tab" type="button" role="tab" id="productTabShipping" aria-controls="productPanelShipping" aria-selected="false" data-product-tab="shipping">Shipping &amp; Returns</button>
+          </div>
+          <div class="product-tab-panels">
+            <div class="product-tab-panel active" role="tabpanel" id="productPanelDescription" aria-labelledby="productTabDescription" data-product-panel="description"></div>
+            <div class="product-tab-panel" role="tabpanel" id="productPanelSpecifications" aria-labelledby="productTabSpecifications" data-product-panel="specifications" hidden></div>
+            <div class="product-tab-panel" role="tabpanel" id="productPanelReviews" aria-labelledby="productTabReviews" data-product-panel="reviews" hidden></div>
+            <div class="product-tab-panel" role="tabpanel" id="productPanelShipping" aria-labelledby="productTabShipping" data-product-panel="shipping" hidden></div>
+          </div>
+        </section>
+
+        <section class="container" style="margin-top:2rem;">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Product details</span>
+              <h2>Why shoppers love it</h2>
+            </div>
+          </div>
+
+          <div class="account-grid">
+            <div class="info-card">
+              <h3>Features</h3>
+              <ul class="checklist" id="detailFeaturesList">
+                <li>• Room-filling sound with deep, rich bass</li>
+                <li>• 18-hour battery life for all-day listening</li>
+                <li>• Quick Bluetooth pairing and app controls</li>
+                <li>• Dust-resistant finish for easy maintenance</li>
+              </ul>
+            </div>
+            <div class="summary-card">
+              <h3>Specifications</h3>
+              <ul class="summary-list" id="detailSpecsList">
+                <li><span>Weight</span><strong>0.9 kg</strong></li>
+                <li><span>Connectivity</span><strong>Bluetooth 5.3</strong></li>
+                <li><span>Battery</span><strong>18 hrs</strong></li>
+                <li><span>Charge</span><strong>USB-C</strong></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="container recommendation-section" aria-labelledby="recommendationTitle">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Curated for you</span>
+              <h2 id="recommendationTitle">More to discover</h2>
+            </div>
+          </div>
+          <div id="productRecommendations" class="recommendation-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+              </div>
+            </div>
+            <p>Curated finds for the modern life.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li>New arrivals</li>
+              <li>Best sellers</li>
+              <li>Gift cards</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li>Careers</li>
+              <li>Journal</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li>Shipping</li>
+              <li>Returns</li>
+              <li><a href="faq.html">Help center</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/products.js"></script><script src="js/ui.js"></script><script src="js/header.js"></script><script src="js/search.js"></script><script src="js/shop.js"></script><script src="js/product.js"></script><script src="js/cart.js"></script><script src="js/wishlist.js"></script><script src="js/checkout.js"></script><script src="js/auth.js"></script><script src="js/account.js"></script><script src="js/app.js"></script>
+  </body>
+</html>

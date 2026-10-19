@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAX | Shop All Products</title>
+    <meta name="description" content="Shop MAX products across electronics, fashion, beauty, home, and more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MAX" />
+    <meta property="og:title" content="MAX | Shop All Products" />
+    <meta property="og:description" content="Shop MAX products across electronics, fashion, beauty, home, and more." />
+    <meta property="og:image" content="assets/products/Apple-AirPods-Pro-2.jfif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="utility-bar">
+          <div class="utility-inner">
+            <div class="utility-message">
+              <span>Free delivery on selected orders</span>
+            </div>
+            <div class="utility-links">
+              <a href="#">Customer service</a>
+              <a href="#">Track order</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main">
+          <div class="header-main-inner">
+            <div class="brand" aria-label="MAX home">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+                <span class="brand-tagline">Everything You Need. Delivered.</span>
+              </div>
+            </div>
+
+            <label class="header-search" aria-label="Search products">
+              <input type="text" placeholder="Search for products, brands and categories…" />
+              <button class="search-action" type="button">Search</button>
+            </label>
+
+            <div class="header-actions">
+              <a href="account.html" class="header-action account-pill" aria-label="Account">
+                <span>👤</span>
+                <span>Account</span>
+              </a>
+              <a href="wishlist.html" class="header-action" aria-label="Wishlist">
+                <span>♡</span>
+                <span>Wishlist</span>
+                <span id="wishlistCount" class="count" hidden>0</span>
+              </a>
+              <a href="cart.html" class="header-action" aria-label="Cart">
+                <span>🛒</span>
+                <span>Cart</span>
+                <span id="cartCount" class="count" hidden>0</span>
+              </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Open menu" type="button">
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category-strip">
+          <nav class="category-strip-inner" aria-label="Category navigation">
+            <a href="index.html" class="category-item">Home</a>
+            <a href="shop.html" class="category-item active">Shop</a>
+            <a href="category.html" class="category-item">Categories</a>
+            <a href="deals.html" class="category-item">Today’s Deals</a>
+            <a href="search.html" class="category-item">Search</a>
+            <a href="#" class="category-item">Flash Sale</a>
+            <a href="#" class="category-item">New Arrivals</a>
+            <a href="#" class="category-item">Best Sellers</a>
+            <a href="#" class="category-item">Electronics</a>
+            <a href="#" class="category-item">Fashion</a>
+            <a href="#" class="category-item">Beauty</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="container page-hero">
+          <div class="page-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Shop</span>
+          </div>
+
+          <div class="page-intro">
+            <div>
+              <span class="eyebrow">Professional marketplace</span>
+              <h1>Shop all products</h1>
+            </div>
+            <p>
+              Compare quality picks from trusted brands and discover the right essentials for your
+              home, work, lifestyle, and everyday routine.
+            </p>
+          </div>
+
+          <div class="catalog-toolbar" id="categoryFilters">
+            <div class="catalog-filters">
+              <button class="filter-chip active" data-filter="all" type="button">All</button>
+              <button class="filter-chip" data-filter="Phones" type="button">Phones</button>
+              <button class="filter-chip" data-filter="Laptops" type="button">Laptops</button>
+              <button class="filter-chip" data-filter="Accessories" type="button">Accessories</button>
+              <button class="filter-chip" data-filter="Fashion" type="button">Fashion</button>
+              <button class="filter-chip" data-filter="Gaming" type="button">Gaming</button>
+              <button class="filter-chip" data-filter="Beauty" type="button">Beauty</button>
+            </div>
+
+            <div class="search-sort-wrap">
+              <label class="search-box">
+                <span>Search</span>
+                <input type="text" placeholder="Search products" />
+              </label>
+              <label class="sort-box">
+                <span>Sort by</span>
+                <select id="sortSelect">
+                  <option value="recommended">Recommended</option>
+                  <option value="popular">Popular</option>
+                  <option value="newest">Newest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="highest-rated">Highest Rated</option>
+                  <option value="biggest-discount">Biggest Discount</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="container shop-layout">
+          <aside class="filter-sidebar">
+            <div class="filter-panel">
+              <div class="filter-head">
+                <h2>Filters</h2>
+                <button type="button" class="clear-filters">Reset</button>
+              </div>
+
+              <div class="filter-group">
+                <h3>Category</h3>
+                <label class="filter-option"><input type="checkbox" value="Phones" /> Phones</label>
+                <label class="filter-option"><input type="checkbox" value="Laptops" /> Laptops</label>
+                <label class="filter-option"><input type="checkbox" value="Accessories" /> Accessories</label>
+                <label class="filter-option"><input type="checkbox" value="Fashion" /> Fashion</label>
+                <label class="filter-option"><input type="checkbox" value="Shoes" /> Shoes</label>
+                <label class="filter-option"><input type="checkbox" value="Beauty" /> Beauty</label>
+                <label class="filter-option"><input type="checkbox" value="Home" /> Home</label>
+                <label class="filter-option"><input type="checkbox" value="Kitchen" /> Kitchen</label>
+                <label class="filter-option"><input type="checkbox" value="Gaming" /> Gaming</label>
+                <label class="filter-option"><input type="checkbox" value="Electronics" /> Electronics</label>
+              </div>
+
+              <div class="filter-group">
+                <h3>Price</h3>
+                <div class="price-range">
+                  <label class="field">
+                    <span>Min</span>
+                    <input type="number" min="0" value="0" placeholder="₦0" />
+                  </label>
+                  <label class="field">
+                    <span>Max</span>
+                    <input type="number" min="0" value="2000000" placeholder="₦2,000,000" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h3>Rating</h3>
+                <label class="filter-option"><input type="checkbox" value="5" /> ★★★★★</label>
+                <label class="filter-option"><input type="checkbox" value="4" /> ★★★★☆ &amp; up</label>
+                <label class="filter-option"><input type="checkbox" value="3" /> ★★★☆☆ &amp; up</label>
+              </div>
+
+              <div class="filter-group">
+                <h3>Brand</h3>
+                <label class="filter-option"><input type="checkbox" value="Apple" /> Apple</label>
+                <label class="filter-option"><input type="checkbox" value="Samsung" /> Samsung</label>
+                <label class="filter-option"><input type="checkbox" value="Nike" /> Nike</label>
+                <label class="filter-option"><input type="checkbox" value="Sony" /> Sony</label>
+                <label class="filter-option"><input type="checkbox" value="Google" /> Google</label>
+                <label class="filter-option"><input type="checkbox" value="Zara" /> Zara</label>
+                <label class="filter-option"><input type="checkbox" value="LG" /> LG</label>
+                <label class="filter-option"><input type="checkbox" value="Nintendo" /> Nintendo</label>
+              </div>
+
+              <div class="filter-group">
+                <h3>Availability</h3>
+                <label class="filter-option"><input type="checkbox" value="in-stock" /> In stock</label>
+                <label class="filter-option"><input type="checkbox" value="out-of-stock" /> Out of stock</label>
+              </div>
+
+              <div class="filter-group">
+                <h3>Discount</h3>
+                <label class="filter-option"><input type="checkbox" value="10" /> 10%+</label>
+                <label class="filter-option"><input type="checkbox" value="20" /> 20%+</label>
+                <label class="filter-option"><input type="checkbox" value="30" /> 30%+</label>
+                <label class="filter-option"><input type="checkbox" value="50" /> 50%+</label>
+              </div>
+
+              <div class="filter-group">
+                <h3>Delivery</h3>
+                <label class="filter-option"><input type="checkbox" value="fast-delivery" /> Fast delivery</label>
+              </div>
+            </div>
+          </aside>
+
+          <div class="shop-results">
+            <div class="results-toolbar">
+              <div>
+                <span class="eyebrow">Curated results</span>
+                <h2>Marketplace picks</h2>
+              </div>
+              <div class="results-stats">
+                <span id="shopResultCount">0 items</span>
+              </div>
+            </div>
+
+            <div class="results-summary">
+              <div id="activeFilters" class="active-filters" aria-live="polite"></div>
+              <button type="button" class="clear-filters top-clear-filters">Clear filters</button>
+            </div>
+
+            <div id="productGrid" class="product-grid marketplace-grid" aria-live="polite"></div>
+
+            <div class="shop-pagination-wrap">
+              <div id="shopPagination" class="shop-pagination" aria-label="Product pagination"></div>
+              <button type="button" id="loadMoreBtn" class="load-more-btn">Load More</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">M</span>
+              <div class="brand-copy">
+                <span class="brand-word">MAX</span>
+              </div>
+            </div>
+            <p>Curated finds for the modern life.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li>New arrivals</li>
+              <li>Best sellers</li>
+              <li>Gift cards</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li>Careers</li>
+              <li>Journal</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li>Shipping</li>
+              <li>Returns</li>
+              <li><a href="faq.html">Help center</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/products.js"></script><script src="js/ui.js"></script><script src="js/header.js"></script><script src="js/search.js"></script><script src="js/shop.js"></script><script src="js/product.js"></script><script src="js/cart.js"></script><script src="js/wishlist.js"></script><script src="js/checkout.js"></script><script src="js/auth.js"></script><script src="js/account.js"></script><script src="js/app.js"></script>
+    <script>
+      const shopFilterEls = {
+        category: document.querySelectorAll('.filter-option input[type="checkbox"][value]'),
+        min: document.querySelector('.filter-group .field input[type="number"]'),
+        max: document.querySelectorAll('.filter-group .field input[type="number"]')[1],
+        rating: document.querySelectorAll('.filter-group input[type="checkbox"][value="5"], .filter-group input[type="checkbox"][value="4"], .filter-group input[type="checkbox"][value="3"]'),
+        availability: document.querySelectorAll('input[type="checkbox"][value="in-stock"], input[type="checkbox"][value="out-of-stock"]'),
+        discount: document.querySelectorAll('input[type="checkbox"][value="10"], input[type="checkbox"][value="20"], input[type="checkbox"][value="30"], input[type="checkbox"][value="50"]'),
+        delivery: document.querySelector('input[type="checkbox"][value="fast-delivery"]'),
+        brand: document.querySelectorAll('input[type="checkbox"][value="Apple"], input[type="checkbox"][value="Samsung"], input[type="checkbox"][value="Nike"], input[type="checkbox"][value="Sony"], input[type="checkbox"][value="Google"], input[type="checkbox"][value="Zara"], input[type="checkbox"][value="LG"], input[type="checkbox"][value="Nintendo"]'),
+      };
+
+      const shopState = {
+        page: 1,
+        pageSize: 8,
+      };
+
+      function getSelectedCheckboxValues(selector) {
+        return [...selector].filter((input) => input.checked).map((input) => input.value);
+      }
+
+      function getActiveShopFilters() {
+        const active = [];
+
+        const selectedCategories = getSelectedCheckboxValues(document.querySelectorAll('.filter-group input[type="checkbox"][value="Phones"], .filter-group input[type="checkbox"][value="Laptops"], .filter-group input[type="checkbox"][value="Accessories"], .filter-group input[type="checkbox"][value="Fashion"], .filter-group input[type="checkbox"][value="Shoes"], .filter-group input[type="checkbox"][value="Beauty"], .filter-group input[type="checkbox"][value="Home"], .filter-group input[type="checkbox"][value="Kitchen"], .filter-group input[type="checkbox"][value="Gaming"], .filter-group input[type="checkbox"][value="Electronics"]'));
+        if (selectedCategories.length) {
+          active.push(...selectedCategories.map((value) => `Category: ${value}`));
+        }
+
+        const selectedBrands = getSelectedCheckboxValues(shopFilterEls.brand);
+        if (selectedBrands.length) {
+          active.push(...selectedBrands.map((value) => `Brand: ${value}`));
+        }
+
+        const selectedRatings = getSelectedCheckboxValues(shopFilterEls.rating).map(Number);
+        if (selectedRatings.length) {
+          active.push(...selectedRatings.map((value) => `Rating: ${value}+`));
+        }
+
+        const selectedDiscounts = getSelectedCheckboxValues(shopFilterEls.discount).map(Number);
+        if (selectedDiscounts.length) {
+          active.push(...selectedDiscounts.map((value) => `Discount: ${value}%+`));
+        }
+
+        const minPriceInput = document.querySelectorAll('.filter-group .field input[type="number"]')[0];
+        const maxPriceInput = document.querySelectorAll('.filter-group .field input[type="number"]')[1];
+        const minPrice = Number(minPriceInput?.value || 0);
+        const maxPrice = Number(maxPriceInput?.value || Number.MAX_SAFE_INTEGER);
+        if (minPrice > 0 || maxPrice < Number.MAX_SAFE_INTEGER) {
+          active.push(`Price: ₦${minPrice.toLocaleString()} - ₦${maxPrice.toLocaleString()}`);
+        }
+
+        if (shopFilterEls.delivery && shopFilterEls.delivery.checked) {
+          active.push('Delivery: Fast delivery');
+        }
+
+        return active;
+      }
+
+      function renderActiveFilters() {
+        const activeFilters = document.getElementById('activeFilters');
+        if (!activeFilters) return;
+
+        const filters = getActiveShopFilters();
+        if (!filters.length) {
+          activeFilters.innerHTML = '<span class="active-filter empty">No active filters</span>';
+          return;
+        }
+
+        activeFilters.innerHTML = filters
+          .slice(0, 6)
+          .map((filter) => `<span class="active-filter">${filter}</span>`)
+          .join('');
+      }
+
+      function renderShopPagination(totalItems, totalPages) {
+        const pagination = document.getElementById('shopPagination');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        if (!pagination || !loadMoreBtn) return;
+
+        pagination.dataset.totalPages = String(totalPages);
+
+        if (!totalItems) {
+          pagination.innerHTML = '';
+          loadMoreBtn.style.display = 'none';
+          return;
+        }
+
+        const pageButtons = [];
+        const startPage = Math.max(1, shopState.page - 2);
+        const endPage = Math.min(totalPages, startPage + 4);
+
+        for (let page = startPage; page <= endPage; page += 1) {
+          pageButtons.push(`
+            <button
+              type="button"
+              class="page-btn ${page === shopState.page ? 'active' : ''}"
+              data-page="${page}"
+            >
+              ${page}
+            </button>
+          `);
+        }
+
+        pagination.innerHTML = `
+          <button type="button" class="page-btn page-nav" data-page="${Math.max(1, shopState.page - 1)}" ${shopState.page === 1 ? 'disabled' : ''}>Prev</button>
+          ${pageButtons.join('')}
+          <button type="button" class="page-btn page-nav" data-page="${Math.min(totalPages, shopState.page + 1)}" ${shopState.page === totalPages ? 'disabled' : ''}>Next</button>
+        `;
+
+        loadMoreBtn.style.display = shopState.page < totalPages ? 'inline-flex' : 'none';
+      }
+
+      function renderShopProducts() {
+        const productGrid = document.getElementById('productGrid');
+        const resultCount = document.getElementById('shopResultCount');
+        if (!productGrid || !resultCount) return;
+
+        const selectedCategories = getSelectedCheckboxValues(document.querySelectorAll('.filter-group input[type="checkbox"][value="Phones"], .filter-group input[type="checkbox"][value="Laptops"], .filter-group input[type="checkbox"][value="Accessories"], .filter-group input[type="checkbox"][value="Fashion"], .filter-group input[type="checkbox"][value="Shoes"], .filter-group input[type="checkbox"][value="Beauty"], .filter-group input[type="checkbox"][value="Home"], .filter-group input[type="checkbox"][value="Kitchen"], .filter-group input[type="checkbox"][value="Gaming"], .filter-group input[type="checkbox"][value="Electronics"]'));
+        const selectedBrands = getSelectedCheckboxValues(shopFilterEls.brand);
+        const selectedRatings = getSelectedCheckboxValues(shopFilterEls.rating).map(Number);
+        const selectedDiscounts = getSelectedCheckboxValues(shopFilterEls.discount).map(Number);
+        const minPrice = Number(document.querySelectorAll('.filter-group .field input[type="number"]')[0].value || 0);
+        const maxPrice = Number(document.querySelectorAll('.filter-group .field input[type="number"]')[1].value || Number.MAX_SAFE_INTEGER);
+        const fastDeliveryOnly = shopFilterEls.delivery && shopFilterEls.delivery.checked;
+
+        const items = (window.MAX_PRODUCTS || []).filter((product) => {
+          const inCategory = !selectedCategories.length || selectedCategories.includes(product.category);
+          const inBrand = !selectedBrands.length || selectedBrands.includes(product.brand);
+          const aboveMin = product.price >= minPrice;
+          const belowMax = product.price <= maxPrice;
+          const hasRating = !selectedRatings.length || selectedRatings.some((rating) => product.rating >= rating);
+          const discountPercent = product.originalPrice && product.originalPrice > product.price
+            ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+            : 0;
+          const passesDiscount = !selectedDiscounts.length || selectedDiscounts.some((level) => discountPercent >= level);
+          const inStock = true;
+          const delivery = !fastDeliveryOnly || (product.deliveryInfo || '').toLowerCase().includes('delivery') || (product.tags || []).includes('Fast delivery');
+
+          return inCategory && inBrand && aboveMin && belowMax && hasRating && passesDiscount && inStock && delivery;
+        });
+
+        const sortValue = document.getElementById('sortSelect')?.value || 'recommended';
+        const sorted = [...items];
+
+        switch (sortValue) {
+          case 'popular':
+            sorted.sort((a, b) => Number(b.reviews ?? b.reviewCount ?? 0) - Number(a.reviews ?? a.reviewCount ?? 0) || Number(b.rating ?? 0) - Number(a.rating ?? 0));
+            break;
+          case 'newest':
+            sorted.sort((a, b) => Number(Boolean(b.isNew)) - Number(Boolean(a.isNew)) || Number(b.id) - Number(a.id));
+            break;
+          case 'price-low':
+            sorted.sort((a, b) => Number(a.price) - Number(b.price));
+            break;
+          case 'price-high':
+            sorted.sort((a, b) => Number(b.price) - Number(a.price));
+            break;
+          case 'highest-rated':
+          case 'rating':
+            sorted.sort((a, b) => Number(b.rating ?? 0) - Number(a.rating ?? 0) || Number(b.reviews ?? b.reviewCount ?? 0) - Number(a.reviews ?? a.reviewCount ?? 0));
+            break;
+          case 'biggest-discount':
+          case 'discount':
+            sorted.sort((a, b) => {
+              const aDiscount = a.originalPrice && a.originalPrice > a.price ? Math.round(((a.originalPrice - a.price) / a.originalPrice) * 100) : 0;
+              const bDiscount = b.originalPrice && b.originalPrice > b.price ? Math.round(((b.originalPrice - b.price) / b.originalPrice) * 100) : 0;
+              return bDiscount - aDiscount || Number(b.rating ?? 0) - Number(a.rating ?? 0);
+            });
+            break;
+          case 'featured':
+          case 'recommended':
+          default:
+            sorted.sort((a, b) => Number(Boolean(b.isFeatured)) - Number(Boolean(a.isFeatured)) || Number(Boolean(b.isBestSeller)) - Number(Boolean(a.isBestSeller)) || Number(b.rating ?? 0) - Number(a.rating ?? 0));
+            break;
+        }
+
+        const totalItems = sorted.length;
+        const totalPages = Math.max(1, Math.ceil(totalItems / shopState.pageSize));
+        if (shopState.page > totalPages) {
+          shopState.page = totalPages;
+        }
+
+        const startIndex = (shopState.page - 1) * shopState.pageSize;
+        const pageItems = sorted.slice(startIndex, startIndex + shopState.pageSize);
+        const showingStart = totalItems ? startIndex + 1 : 0;
+        const showingEnd = Math.min(startIndex + pageItems.length, totalItems);
+
+        resultCount.textContent = totalItems ? `Showing ${showingStart}-${showingEnd} of ${totalItems} items` : '0 items';
+        renderActiveFilters();
+        renderShopPagination(totalItems, totalPages);
+
+        if (!totalItems) {
+          productGrid.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              <h3>No products match your filters.</h3>
+              <p>Try broadening the price range or clearing a category.</p>
+            </div>
+          `;
+          return;
+        }
+
+        renderWithLoading(productGrid, 'card', () => {
+          productGrid.innerHTML = pageItems
+            .map((product) => renderProductCard(product, { isWishlisted: (state.wishlist || []).some((item) => item.id === product.id) }))
+            .join('');
+          bindActionButtons(productGrid);
+        }, Math.min(8, Math.max(4, pageItems.length)));
+      }
+
+      document.querySelectorAll('.filter-option input[type="checkbox"]').forEach((input) => {
+        input.addEventListener('change', () => {
+          shopState.page = 1;
+          renderShopProducts();
+        });
+      });
+
+      document.querySelectorAll('.filter-group .field input[type="number"]').forEach((input) => {
+        input.addEventListener('input', () => {
+          shopState.page = 1;
+          renderShopProducts();
+        });
+      });
+
+      document.getElementById('sortSelect')?.addEventListener('change', () => {
+        state.sort = document.getElementById('sortSelect').value;
+        shopState.page = 1;
+        renderShopProducts();
+      });
+
+      document.querySelectorAll('.clear-filters').forEach((button) => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.filter-option input[type="checkbox"]').forEach((input) => {
+            input.checked = false;
+          });
+          document.querySelectorAll('.filter-group .field input[type="number"]').forEach((input, index) => {
+            input.value = index === 0 ? '0' : '2000000';
+          });
+          shopState.page = 1;
+          renderShopProducts();
+        });
+      });
+
+      document.getElementById('shopPagination')?.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-page]');
+        if (!button) return;
+        const nextPage = Number(button.dataset.page);
+        if (!Number.isFinite(nextPage) || nextPage < 1) return;
+        const pagination = document.getElementById('shopPagination');
+        const totalPages = Number(pagination?.dataset.totalPages || 1);
+        if (nextPage <= totalPages) {
+          shopState.page = nextPage;
+          renderShopProducts();
+        }
+      });
+
+      document.getElementById('loadMoreBtn')?.addEventListener('click', () => {
+        const pagination = document.getElementById('shopPagination');
+        const totalPages = Number(pagination?.dataset.totalPages || 1);
+        if (shopState.page < totalPages) {
+          shopState.page += 1;
+          renderShopProducts();
+        }
+      });
+
+      const initialSort = document.getElementById('sortSelect');
+      if (initialSort) {
+        const requestedSort = new URLSearchParams(window.location.search).get('sort');
+        const validSorts = ['recommended', 'popular', 'newest', 'price-low', 'price-high', 'highest-rated', 'biggest-discount'];
+        initialSort.value = validSorts.includes(requestedSort) ? requestedSort : 'recommended';
+      }
+
+      renderShopProducts();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+// Compatibility entry point for older links. Pages load the split modules directly.
